@@ -2,26 +2,11 @@ import './App.css';
 import { TreeFill } from 'react-bootstrap-icons';
 import { Hurricane } from 'react-bootstrap-icons';
 
-import Gallery from "react-photo-gallery";
-import { photos } from "./photos";
-
-// import { slide as Menu } from 'react-burger-menu'
-
-// import Background from './grind1.jpeg';
-
-
 import {
   ScrollingProvider,
   useScrollSection,
   Section,
 } from 'react-scroll-section';
-
-// var sectionStyle = {
-//   width: "100%",
-//   height: "400px",
-//   backgroundImage: `url(${Background})`,
-//   backgroundSize: 'cover' 
-// };
 
 const StaticMenu = () => {
   const homeSection = useScrollSection('home');
@@ -31,8 +16,6 @@ const StaticMenu = () => {
 
   return (
     <div>
-      
-
     <div className="green Menu ">
       <div onClick={homeSection.onClick} selected={homeSection.selected}>
         Home
@@ -118,10 +101,10 @@ function App() {
           </div>
         </div>
 <center>
-        <img width="50%" src="myPredator.jpg"></img><br></br>
-        <img width="50%" src="myEquipment.jpg"></img><br></br>
-        <img width="50%" src="equipmentLoaded.jpg"></img><br></br>
-        <img width="70%" src="predatorMarketing.jpg"></img><br></br>
+        <img alt="equipment" width="50%" src="myPredator.jpg"></img><br></br>
+        <img alt="equipment"  width="50%" src="myEquipment.jpg"></img><br></br>
+        <img alt="equipment"  width="50%" src="equipmentLoaded.jpg"></img><br></br>
+        <img alt="equipment"  width="70%" src="predatorMarketing.jpg"></img><br></br>
 </center>
     </Section>
 
